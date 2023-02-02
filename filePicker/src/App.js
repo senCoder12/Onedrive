@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { ReactOneDriveFilePicker } from "react-onedrive-filepicker";
-// import oneDriveAPI from "onedrive-api"
-// const oneDriveAPI = require("onedrive-api");
 
 export default function App() {
   const [urlList, setUrl] = useState([]);

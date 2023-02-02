@@ -6,17 +6,6 @@ import { ReactOneDriveFilePicker } from "react-onedrive-filepicker";
 export default function App() {
   const [urlList, setUrl] = useState([]);
   const [nameList, setName] = useState([]);
-  // const uploadFile = () => {
-  //   oneDriveAPI.items
-  //     .uploadSimple({
-  //       accessToken: "23901c7e-f196-4e71-baea-0ca7ff62257f",
-  //       filename: test.txt,
-  //       readableStream: {},
-  //     })
-  //     .then((item) => {
-  //       console.log(item);
-  //     });
-  // }
   return (
     <div className="App" style={{ margin: "auto", width: "fit-content", textAlign: "center" }}>
       <ReactOneDriveFilePicker
@@ -47,8 +36,8 @@ export default function App() {
       {
         nameList.map((name, idx) => (
           <>
-            <span style={{ fontSize: "18px", fontWeight: "700" }}>File Name</span>: {name}
-            File Link: <a href={urlList[idx]} target="_blank"><h3>{urlList[idx]}</h3></a>
+            <span style={{ fontSize: "18px", fontWeight: "700" }}>File Name</span>: {name} <br/><br/>
+            <span style={{ fontSize: "18px", fontWeight: "700" }}>File Link: <a href={urlList[idx]} target="_blank"><h3>{urlList[idx]}</h3></a></span>
             <hr />
           </>
         ))
